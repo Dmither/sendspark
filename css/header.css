@@ -113,6 +113,7 @@
 
 /* burger ============================================================== */
 .header__burger {
+  background-color: transparent;
   display: none;
   width: 30px;
   height: 35px;
