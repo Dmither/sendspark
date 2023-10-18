@@ -9,6 +9,8 @@
 	--color-bg-orange: #fabc32;
 }
 body {
+	display: flex;
+	flex-direction: column;
 	font-family: "inter";
 	font-size: 17px;
 	line-height: 32px;
@@ -31,6 +33,10 @@ body {
 }
 .frozen {
 	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto
 }
 
 /* container ================================================= */
@@ -86,4 +92,21 @@ section h2[class*="__title"] {
 
 section p[class*="__description"] {
 	color: var(--color-font-light);
+}
+
+/* logo =========================================================== */
+a[class*="__icon"] {
+  display: flex;
+  align-items: center;
+}
+a[class*="__icon"]:hover, a[class*="__icon"]:focus {
+  outline: none;
+}
+a[class*="__icon"]:hover svg g path:nth-child(1),
+a[class*="__icon"]:focus svg g path:nth-child(1) {
+  fill: var(--color-bg-orange);
+}
+a[class*="__icon"]:hover svg g path:nth-child(2),
+a[class*="__icon"]:focus svg g path:nth-child(2) {
+  fill: var(--color-bg-important);
 }
