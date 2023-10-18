@@ -102,11 +102,11 @@ a[class*="__icon"] {
 a[class*="__icon"]:hover, a[class*="__icon"]:focus {
   outline: none;
 }
-a[class*="__icon"]:hover svg g path:nth-child(1),
-a[class*="__icon"]:focus svg g path:nth-child(1) {
+a[class*="__icon"]:hover svg path:nth-child(1),
+a[class*="__icon"]:focus svg path:nth-child(1) {
   fill: var(--color-bg-orange);
 }
-a[class*="__icon"]:hover svg g path:nth-child(2),
-a[class*="__icon"]:focus svg g path:nth-child(2) {
+a[class*="__icon"]:hover svg path:nth-child(2),
+a[class*="__icon"]:focus svg path:nth-child(2) {
   fill: var(--color-bg-important);
 }
