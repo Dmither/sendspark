@@ -1,14 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/img/icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sendspark</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./img/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sendspark</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="/" class="header__icon" aria-label="sendspark homepage">
+        <svg width="129" height="24" viewBox="0 0 129 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2_8)">
+            <path
+              d="M15.6722 1.7251C17.6674 1.7251 19.2889 3.34657 19.2889 5.34176V23.4251L12.0556 21.014H3.61667C2.95361 21.014 2.33275 20.8392 1.80231 20.5257L7.09469 16.4088L13.5746 11.3695L7.09469 6.33032L1.80231 2.21335C2.33275 1.8999 2.95361 1.7251 3.61667 1.7251H15.6722ZM9.64444 11.3695L5.69625 14.4377L0.235083 18.6812C0.0843889 18.2834 0 17.8494 0 17.3973V5.34176C0 4.88968 0.0843889 4.45568 0.235083 4.05785L5.69625 8.3014L9.64444 11.3695Z"
+              fill="#6140FF" />
+            <path
+              d="M31.1028 10.581C33.113 11.152 34.2544 12.4314 34.2544 14.3047C34.2544 16.5208 32.3816 17.96 29.8228 17.96C28.0185 17.96 26.305 17.2746 25.2999 15.8354L27.4015 14.0535C27.9271 14.8533 28.9092 15.3098 29.9833 15.3098C30.7819 15.3098 31.3995 15.0361 31.3995 14.4876C31.3995 13.985 30.9424 13.7792 29.709 13.4365L28.9092 13.2082C26.8305 12.6602 25.7794 11.2889 25.8254 9.5075C25.8479 7.4283 27.6074 6.03508 30.0057 6.03508C31.6738 6.03508 32.9756 6.65205 33.9122 7.65715L32.1533 9.55293C31.5139 8.98195 30.7141 8.61625 29.8688 8.61625C29.1604 8.61625 28.6579 8.84453 28.6579 9.32465C28.6579 9.73578 28.9092 9.96405 30.0287 10.2838L31.1028 10.581ZM40.8582 6.03485C43.8511 6.03485 46.4783 7.9542 46.4783 11.6549C46.4783 11.9292 46.4783 12.2483 46.4328 12.7284H37.8884C38.0712 14.2591 39.419 15.1043 40.9272 15.1043C42.3435 15.1043 43.3716 14.4419 43.8741 13.6651L46.204 15.401C45.1535 16.9317 43.3031 17.9598 40.9042 17.9598C37.5002 17.9598 34.8501 15.6069 34.8501 11.9976C34.8501 8.61602 37.3858 6.03485 40.8582 6.03485ZM38.0028 10.6038H43.3486C43.0743 9.256 41.9323 8.61602 40.7674 8.61602C39.6019 8.61602 38.3001 9.21057 38.0028 10.6038ZM54.1786 6.03496C56.9432 6.03496 58.5877 8.04574 58.5877 11.015V17.7086H55.4579V11.5406C55.4579 9.89551 54.7501 8.89041 53.4477 8.89041C52.0085 8.89041 50.9114 9.94151 50.9114 12.1346V17.7086H47.7823V6.28624H50.9114V7.58861C51.506 6.67436 52.6939 6.03496 54.1786 6.03496ZM68.3905 7.56556V0.574707H71.5203V17.7086H68.3905V16.4292C67.888 17.1606 66.677 17.9598 65.101 17.9598C62.0621 17.9598 59.7322 15.2412 59.7322 11.9977C59.7322 8.75351 62.0621 6.03491 65.101 6.03491C66.677 6.03491 67.888 6.83473 68.3905 7.56556ZM65.7634 15.1044C67.4763 15.1044 68.6418 13.779 68.6418 11.9977C68.6418 10.2157 67.4763 8.89036 65.7634 8.89036C64.0504 8.89036 62.8849 10.2157 62.8849 11.9977C62.8849 13.779 64.0504 15.1044 65.7634 15.1044ZM78.4672 10.581C80.4774 11.152 81.6194 12.4314 81.6194 14.3047C81.6194 16.5208 79.7466 17.96 77.1873 17.96C75.3829 17.96 73.6694 17.2746 72.6643 15.8354L74.766 14.0535C75.2915 14.8533 76.2742 15.3098 77.3477 15.3098C78.147 15.3098 78.7639 15.0361 78.7639 14.4876C78.7639 13.985 78.3074 13.7792 77.0734 13.4365L76.2742 13.2082C74.195 12.6602 73.1445 11.2889 73.1899 9.5075C73.2129 7.4283 74.9718 6.03508 77.3707 6.03508C79.0382 6.03508 80.3406 6.65205 81.2773 7.65715L79.5178 9.55293C78.8784 8.98195 78.0785 8.61625 77.2333 8.61625C76.5255 8.61625 76.0229 8.84453 76.0229 9.32465C76.0229 9.73578 76.2742 9.96405 77.3931 10.2838L78.4672 10.581ZM89.3881 6.03491C92.4264 6.03491 94.7569 8.75351 94.7569 11.9977C94.7569 15.2412 92.4264 17.9598 89.3881 17.9598C87.812 17.9598 86.6011 17.1606 86.0755 16.4292V22.4834H82.9458V6.28618H86.0755V7.56556C86.6011 6.83473 87.812 6.03491 89.3881 6.03491ZM88.7027 15.1044C90.4162 15.1044 91.5812 13.779 91.5812 11.9977C91.5812 10.2157 90.4162 8.89036 88.7027 8.89036C86.9898 8.89036 85.8243 10.2157 85.8243 11.9977C85.8243 13.779 86.9898 15.1044 88.7027 15.1044ZM103.965 7.56556V6.28618H107.094V17.7086H103.965V16.4292C103.462 17.1606 102.251 17.9598 100.675 17.9598C97.6369 17.9598 95.3064 15.2412 95.3064 11.9977C95.3064 8.75351 97.6369 6.03491 100.675 6.03491C102.251 6.03491 103.462 6.83473 103.965 7.56556ZM101.338 15.1044C103.051 15.1044 104.216 13.779 104.216 11.9977C104.216 10.2157 103.051 8.89036 101.338 8.89036C99.6246 8.89036 98.4591 10.2157 98.4591 11.9977C98.4591 13.779 99.6246 15.1044 101.338 15.1044ZM112.259 8.1137C112.648 6.99418 113.813 6.14893 115.093 6.14893C115.412 6.14893 115.755 6.17193 116.143 6.28635V9.4615C115.664 9.30165 115.229 9.21023 114.727 9.21023C113.242 9.21023 112.259 10.3758 112.259 12.2485V17.7087H109.13V6.28635H112.259V8.1137ZM123.532 11.7717L128.8 17.7086H124.939L120.278 12.4543V17.7086H117.149V0.574765H120.278V9.07671C120.535 9.16526 120.809 9.21931 121.101 9.21931C122.403 9.21931 123.111 8.21421 123.111 6.56971V5.57611H126.241V7.09469C126.241 9.39009 125.255 11.1082 123.532 11.7717Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_2_8">
+              <rect width="129" height="24" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <div class="header__menu">
+        <ul class="header__list">
+          <li><a href="" class="header__link">Solutions</a></li>
+          <li><a href="" class="header__link">Resources</a></li>
+          <li><a href="" class="header__link">Pricing</a></li>
+          <li><a href="" class="header__link">Sign In</a></li>
+          <li><a href="" class="header__link header__link_important">Sign Up for Free</a></li>
+        </ul>
+      </div>
+      <btn class="header__burger"><span></span></btn>
+    </div>
+  </header>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, repellat impedit dicta cumque quia nihil voluptas
+    non voluptatum ea temporibus deserunt cupiditate, commodi id sunt laboriosam, possimus alias vitae eaque odit.
+    Dolores nobis, distinctio veniam ut aut obcaecati? Totam minus voluptas adipisci quia facere autem eos dolor
+    distinctio! Quaerat, quos voluptatum! Rerum quo explicabo omnis pariatur! Obcaecati, ab, necessitatibus quae est
+    vero quis, optio accusantium aspernatur possimus sint facere laborum beatae debitis sit maxime blanditiis
+    voluptatum pariatur odio animi esse dolorum perferendis itaque quam porro? Dolore quibusdam, iusto sapiente
+    dolorem nulla repellendus. At quo eos aut, voluptatum quas vel illum ea, officiis modi facere pariatur quod,
+    fugiat neque. Et nulla dignissimos eveniet. Ipsam sed, dolor deserunt, tempore inventore eos voluptate quam
+    provident labore cupiditate nam veniam amet, a doloremque non molestias! Ad, voluptatibus enim amet exercitationem
+    cupiditate laudantium blanditiis porro rem error dolore voluptatum earum at eius fugiat neque fuga dolorum tempore
+    placeat quae quisquam. Laudantium velit, quod ut ipsam ab hic aperiam ducimus impedit voluptatum cumque soluta
+    iste dolor, praesentium fugiat eaque odio consequuntur assumenda at. Ipsam incidunt quibusdam dolor vel blanditiis
+    dolorem eos quia, alias praesentium voluptate earum, eligendi ea omnis voluptates nobis iure ab ullam delectus
+    necessitatibus! Commodi eos similique ullam cupiditate aut, sint hic omnis excepturi soluta distinctio quae quam
+    explicabo dolore enim velit nesciunt nemo est asperiores! Iure iusto suscipit officia natus ducimus omnis, quo hic
+    eligendi optio, nihil accusamus fugit ad repudiandae. Quos tenetur sequi, quasi veritatis earum non facilis
+    delectus iste deserunt dolorum harum quibusdam ut accusantium exercitationem doloribus beatae dolore officia fuga,
+    suscipit tempore facere voluptatum illo? Recusandae inventore commodi corrupti eveniet possimus, dicta minus quo
+    sunt a, qui fugiat officiis animi, quod obcaecati delectus ullam autem quibusdam aliquid dolor labore reiciendis?
+    Error autem nam tempore optio, neque animi sit. Fugiat ipsam minima esse itaque! Repellat, fugiat? Sed cupiditate
+    molestias architecto, ut fugit rerum odit deleniti iusto animi quod perspiciatis laboriosam quo alias facere porro
+    veritatis maiores, obcaecati facilis error laborum ipsum perferendis hic! Illum tenetur, excepturi ducimus
+    dignissimos omnis natus? Cumque voluptatem unde earum incidunt corporis voluptates libero dolorum vitae placeat
+    voluptatum quas aliquam illum quae, sed accusantium aut quisquam amet quidem asperiores molestias facere possimus
+    rem architecto vel! Earum voluptatum, sapiente mollitia deserunt soluta nihil ea ipsum? Odit nostrum doloremque
+    asperiores eligendi consectetur, doloribus, molestiae, commodi iure voluptatem nesciunt velit ad. Suscipit
+    exercitationem, debitis hic perspiciatis tenetur quasi atque veniam, deleniti, rem natus vitae. Porro, magnam
+    corrupti! Iusto maxime dolorem reiciendis corporis et, corrupti natus modi odio velit delectus animi nesciunt
+    veniam exercitationem eaque repudiandae molestias mollitia dolorum, possimus officia non vero sint quaerat neque!
+    Illo nemo beatae non dolorem nulla quae eum nam! Quidem eos dolores dignissimos veritatis rem modi sed at?
+    Recusandae enim hic incidunt non, provident laudantium nihil vero veniam alias libero doloremque rem, minus fuga?
+    Tenetur, explicabo! Maiores odio aliquam adipisci quisquam. Aspernatur optio sequi voluptas nesciunt dolore,
+    repudiandae recusandae officia eligendi beatae commodi libero nulla. Molestias illo, exercitationem eligendi
+    quisquam similique voluptatibus ad, nulla veritatis earum placeat consequatur numquam. Eveniet ipsam nobis ducimus
+    aut id sequi animi voluptatem odit quaerat officiis blanditiis at ullam, suscipit facere quia minima ipsum.
+    Placeat quae tempore eum sequi possimus fuga officiis accusantium, aut dolores, debitis odit in recusandae neque
+    nostrum. Voluptates, ullam corporis nulla perferendis dolorum ex sed consequatur illum atque totam sapiente autem
+    reprehenderit facere sequi. Molestias explicabo alias culpa ad laborum magnam, aut quos commodi, debitis cum,
+    libero maiores quod quam! Animi, eum. Ut unde eius delectus id doloremque placeat quo doloribus itaque inventore
+    accusantium! Et voluptates placeat illo odit molestiae, qui accusantium animi perferendis nemo, facilis optio
+    deserunt? Facere dolore deserunt alias possimus corrupti impedit necessitatibus ipsa, quis assumenda! Esse
+    incidunt perferendis repudiandae totam suscipit beatae voluptatum consectetur quam veniam labore laborum repellat
+    ratione repellendus in, atque provident magni tenetur sit porro officiis rerum quia facere? Delectus maiores non
+    ut reiciendis quae quo laborum necessitatibus consequatur, nihil doloremque alias nobis architecto dolores amet,
+    blanditiis odio asperiores natus repellendus. Laboriosam pariatur porro eum perspiciatis architecto eveniet
+    inventore sapiente dolore obcaecati tempore ducimus, vero nulla doloribus ipsam? Dolor veniam rerum dolorum totam
+    assumenda vero quae atque aliquid distinctio? Ut dicta qui repellendus eius quam autem, voluptatum illum quibusdam
+    quasi assumenda? Dolor temporibus asperiores nulla deserunt. Similique commodi velit consequuntur tempore error,
+    quae, tenetur eius eaque repellendus beatae reprehenderit possimus ipsam, non harum delectus ducimus deserunt nisi
+    assumenda ea fugit quis laboriosam. Eveniet alias animi quis quas quo veniam, ab hic repellendus vero
+    perspiciatis? Reiciendis, animi totam fuga eum unde quam accusantium hic possimus eos porro? Excepturi dignissimos
+    consequatur cupiditate molestias deleniti similique porro rerum, nisi quidem provident debitis mollitia recusandae
+    quas earum velit dolorum dolores reprehenderit tempore aperiam vel eos assumenda! Necessitatibus aspernatur magni
+    officiis earum ipsa, vitae eos nihil. Illo, aspernatur perferendis! Sint atque odit repellendus iure impedit eos
+    non perferendis error accusantium nemo accusamus quisquam, nihil minima vitae culpa officiis dignissimos aliquam
+    vero vel quasi minus? Similique accusamus praesentium repellat cupiditate culpa veniam unde? Dicta placeat
+    mollitia asperiores nulla modi, exercitationem ab maiores, quae rem eaque, optio quis eligendi ea perferendis
+    sequi. Porro impedit, autem non quibusdam amet nam deleniti ex dicta enim esse ea error possimus obcaecati
+    dignissimos nemo suscipit nobis. Minima repudiandae reprehenderit magni eos, odit, sit repellat praesentium autem
+    facere veniam a eligendi natus ex nihil dolorum odio quo id cum iusto iure ea qui? At dignissimos quibusdam
+    consequuntur incidunt obcaecati accusantium, tempora aperiam error ea aliquam vel animi optio ducimus iste illum
+    atque nobis neque non praesentium harum deserunt ipsam magni aliquid eius! Molestias, praesentium numquam eius
+    eaque repudiandae facere, officiis saepe quibusdam quia libero possimus. Repudiandae odit corrupti earum
+    laboriosam adipisci animi officia nisi, atque officiis amet est assumenda nostrum ab aliquid dolorem voluptatem
+    provident. Sit expedita quo mollitia minus ea impedit harum, nulla similique hic culpa explicabo officia ex, quam
+    pariatur. Culpa, nostrum! Voluptatum magni delectus quia repellendus quis error amet aspernatur labore assumenda
+    consequatur! Sit dolorem error porro ea consequuntur iusto, cum, quibusdam accusantium vel quo sed doloremque
+    tenetur.
+  </p>
+  <!-- <div class="wrapper">
+  </div> -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
