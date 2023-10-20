@@ -85,7 +85,17 @@ section h1[class*="__title"] {
 section h2[class*="__title"] {
 	font-family: "Roboto";
 	font-size: 38px;
-	line-height: 44px;
+	line-height: 1.158;
+}
+@media (max-width: 991.98px) {
+	section h2[class*="__title"] {
+		font-size: 32px;
+	}
+}
+@media (max-width: 767.98px) {
+	section h2[class*="__title"] {
+		font-size: 28px;
+	}
 }
 
 section p[class*="__description"] {

@@ -1,0 +1,135 @@
+.record {
+	padding: 128px 0;
+}
+.record__container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+}
+.record__img-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.record__img-block img,
+.record__img-block source {
+	width: 100%;
+}
+.record__content {
+	justify-self: self-end;
+	max-width: 371px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.record__title {
+	margin-bottom: 27px;
+}
+.record__description {
+	margin-bottom: 9px;
+}
+.record__features {
+	margin-bottom: 17px;
+}
+.record__features li {
+	display: flex;
+	align-items: center;
+	-moz-column-gap: 8px;
+	column-gap: 8px;
+	color: var(--color-font-light);
+}
+.record__features li::before {
+	content: "";
+	width: 20px;
+	height: 14px;
+	background-image: url(../img/record-check.svg);
+}
+.record__install-btn {
+	padding: 8px 30px 8px 16px;
+	background-color: var(--color-bg-important);
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	-moz-column-gap: 8px;
+	column-gap: 8px;
+}
+.record__install-btn div:first-child {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: var(--color-bg-main);
+	position: relative;
+}
+.record__install-btn div:first-child::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/record-google.svg);
+}
+.record__install-btn div:last-child {
+	color: var(--color-font-alternative);
+	font-size: 17px;
+	line-height: 2.82;
+}
+.record__install-btn:hover div:last-child,
+.record__install-btn:focus div:last-child {
+	color: var(--color-bg-orange);
+}
+
+@media (max-width: 991.98px) {
+	.record {
+		padding: 70px 0;
+	}
+	.record__title {
+		margin-bottom: 20px;
+	}
+	.record__description {
+		margin-bottom: 9px;
+	}
+	.record__features {
+		margin-bottom: 17px;
+	}
+	.record__install-btn {
+		padding: 4px 20px 4px 8px;
+	}
+	.record__install-btn div:last-child {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.record {
+		padding: 40px 0;
+	}
+	.record__container {
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+	.record__img-block {
+		grid-row: 2;
+	}
+	.record__content {
+		max-width: 100%;
+		align-items: center;
+	}
+	.record__title {
+		margin-bottom: 15px;
+	}
+	.record__description {
+		margin-bottom: 9px;
+	}
+	.record__features {
+		margin-bottom: 17px;
+	}
+	.record__install-btn {
+		padding: 4px 10px 4px 4px;
+	}
+	.record__install-btn div:last-child {
+		font-size: 15px;
+		line-height: 2;
+	}
+}
