@@ -80,8 +80,6 @@ section {
 }
 section h1[class*="__title"] {
 	font-family: "Roboto";
-	font-size: 48px;
-	line-height: 52px;
 	color: var(--color-font-contrast);
 }
 section h2[class*="__title"] {
