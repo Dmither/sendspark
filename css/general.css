@@ -76,8 +76,7 @@ body {
 }
 
 /* section ====================================================== */
-section {
-}
+
 section h1[class*="__title"] {
 	font-family: "Roboto";
 	color: var(--color-font-contrast);
