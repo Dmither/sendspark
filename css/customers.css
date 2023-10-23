@@ -1,0 +1,116 @@
+.customers {
+  padding: 92px 0 88px;
+}
+.customers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customers__title {
+  margin-bottom: 20px;
+  max-width: 445px;
+  text-align: center;
+}
+.customers__description {
+  margin-bottom: 64px;
+  text-align: center;
+}
+.customers__items {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.customer__item {
+  display: grid;
+}
+.customers__item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customers__item-title {
+  margin-top: 18px;
+  margin-bottom: 41px;
+  font-family: "Roboto";
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--color-font-main);
+}
+.customers__item-text {
+  font-size: 17px;
+  line-height: 1.88;
+  color: var(--color-font-light);
+}
+.customers__item-img {
+  width: 100%;
+  aspect-ratio: 1 / 0.75;
+}
+.customers__item-img source, .customers__item-img img {
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .customer__item {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 128px;
+         column-gap: 128px;
+  }
+  .customer__item_right .customers__item-img{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .customer__item_right .customers__item-content {
+    grid-column: 2;
+  }
+}
+@media (max-width: 1199.98px) {
+  .customers {
+    padding: 62px 0 60px;
+  }
+  .customers__title {
+    margin-bottom: 15px;
+  }
+  .customers__description {
+    margin-bottom: 44px;
+  }
+  .customers__items {
+    gap: 44px;
+  }
+  .customers__item-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  .customers__item-text {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .customers {
+    padding: 42px 0 40px;
+  }
+  .customers__title {
+    margin-bottom: 15px;
+  }
+  .customers__description {
+    margin-bottom: 34px;
+  }
+  .customers__items {
+    gap: 30px;
+  }
+  .customers__item-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .customers__item-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .customers__item-img {
+    justify-self: center;
+    max-width: 272px;
+  }
+}
