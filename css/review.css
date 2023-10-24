@@ -24,6 +24,9 @@
   color: var(--color-font-alternative);
 }
 .review__logo {
+  width: 168px;
+  height: 28px;
+  background-image: url(../img/review-logo.svg);
 }
 .review__img {
   width: 441px;
@@ -100,6 +103,6 @@
     text-align: center;
   }
   .review__logo {
-    text-align: center;
+    justify-self: center;
   }
 }

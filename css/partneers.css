@@ -7,6 +7,24 @@
   align-items: center;
   gap: 20px 40px;
 }
+.partneers__container img {
+  height: 32px;
+}
+.partneers__container img:nth-child(1) {
+  width: 107px;
+}
+.partneers__container img:nth-child(2) {
+  width: 129px;
+}
+.partneers__container img:nth-child(3) {
+  width: 110px;
+}
+.partneers__container img:nth-child(4) {
+  width: 131px;
+}
+.partneers__container img:nth-child(5) {
+  width: 72px;
+}
 @media (max-width: 767.98px) {
   .partneers__container img {
     height: 26px;
