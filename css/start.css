@@ -32,6 +32,7 @@
   color: var(--color-font-alternative);
 }
 .start__link:hover, .start__link:focus {
+  outline: none;
   color: var(--color-bg-orange);
 }
 .start__description {
