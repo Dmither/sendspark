@@ -16,6 +16,7 @@ let spoilersList = document.querySelectorAll(".connect__content .connect__item")
 
 spoilersList.forEach(spoilerItem => {
   console.log(spoilerItem)
+  spoilerItem.setAttribute("tabindex", "0");
   if (!spoilerItem.classList.contains("_opened")) {
     spoilerItem.children[1].style.height = 0 + "px";
   } else {
@@ -32,6 +33,17 @@ spoilersList.forEach(spoilerItem => {
     } else {
       spoilerItem.classList.remove("_opened");
       spoilerItem.children[1].style.height = 0 + "px";
+    }
+  })
+  spoilerItem.addEventListener("focus", function(event){
+    console.log(event)
+    if (!spoilerItem.classList.contains("_opened")) {
+      spoilersList.forEach(item => {
+        item.classList.remove("_opened");
+        item.children[1].style.height = 0 + "px";
+      })
+      spoilerItem.classList.add("_opened");
+      spoilerItem.children[1].style.height = spoilerItem.children[1].children[0].offsetHeight + "px";
     }
   })
 });
