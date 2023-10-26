@@ -1,0 +1,100 @@
+.form {
+  padding: 15px 0 40px;
+  margin: 0 auto;
+  max-width: 380px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.form-field {
+  grid-column: span 2;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-field label{
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.form-field input{
+  border-radius: 4px;
+  padding: 10px;
+  font-size: inherit;
+}
+.form-field input:user-invalid{
+  outline: 2px solid red;
+}
+.form-field input:focus {
+  outline: 2px solid var(--color-bg-important);
+}
+.form-submit {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 15px 40px 17px;
+  border-radius: 4px;
+  background-color: var(--color-bg-important);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--color-font-alternative);
+}
+.form-submit:hover, .form-submit:focus {
+  outline: none;
+  color: var(--color-bg-orange);
+}
+.form-field input#password {
+  padding-right: 40px;
+}
+.form-show-pass {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: var(--color-bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-show-pass:focus-visible {
+  outline: 2px solid var(--color-bg-important);
+}
+.form-show-pass.active path{
+  stroke: var(--color-bg-important);
+}
+.forget-link {
+  color: var(--color-bg-important);
+  text-decoration: underline;
+  text-align: right;
+}
+
+@media (max-width: 991.98px) {
+  .form-submit {
+    padding: 13px 35px 14px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-submit {
+    padding: 12px 30px 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 479.98px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form-field {
+    grid-column: span 1;
+  }
+  .form-submit {
+    margin-bottom: 15px;
+  }
+  .forget-link {
+    text-align: center;
+  }
+}
