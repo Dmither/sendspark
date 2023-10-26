@@ -54,6 +54,7 @@
 }
 .connect__item-toggle {
   transition: all 0.2s ease 0s;
+  overflow: hidden;
 }
 .connect__item-description {
   padding: 34px 0 20px;
