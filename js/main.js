@@ -22,19 +22,25 @@ spoilersList.forEach(spoilerItem => {
   } else {
     spoilerItem.children[1].style.height = spoilerItem.children[1].children[0].offsetHeight + "px";
   }
-  spoilerItem.addEventListener("click", function(event){
-    if (!spoilerItem.classList.contains("_opened")) {
-      spoilersList.forEach(item => {
-        item.classList.remove("_opened");
-        item.children[1].style.height = 0 + "px";
-      })
-      spoilerItem.classList.add("_opened");
-      spoilerItem.children[1].style.height = spoilerItem.children[1].children[0].offsetHeight + "px";
-    } else {
-      spoilerItem.classList.remove("_opened");
-      spoilerItem.children[1].style.height = 0 + "px";
-    }
-  })
+  // spoilerItem.addEventListener("click", function(event){
+  //   if (!spoilerItem.classList.contains("_opened")) {
+  //     spoilersList.forEach(item => {
+  //       item.classList.remove("_opened");
+  //       item.children[1].style.height = 0 + "px";
+  //     })
+  //     spoilerItem.classList.add("_opened");
+  //     spoilerItem.children[1].style.height = spoilerItem.children[1].children[0].offsetHeight + "px";
+  //   } else {
+  //     spoilerItem.classList.remove("_opened");
+  //     spoilerItem.children[1].style.height = 0 + "px";
+  //   }
+  // })
+  // spoilerItem.addEventListener("click", function(event){
+  //   if (spoilerItem.classList.contains("_opened")) {
+  //     spoilerItem.classList.remove("_opened");
+  //     spoilerItem.children[1].style.height = 0 + "px";
+  //   }
+  // })
   spoilerItem.addEventListener("focus", function(event){
     console.log(event)
     if (!spoilerItem.classList.contains("_opened")) {
