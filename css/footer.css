@@ -56,6 +56,7 @@
 	display: block;
 	padding: 6px 0;
 	color: var(--color-font-contrast);
+	text-decoration: underline;
 }
 .footer__nav-link:hover,
 .footer__nav-link:focus {
